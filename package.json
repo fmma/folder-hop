@@ -1,0 +1,38 @@
+{
+  "name": "folder-hop",
+  "displayName": "Folder Hop",
+  "description": "Open folders in a new window using the quick pick UI",
+  "version": "0.1.0",
+  "publisher": "fmma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmma/folder-hop"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:folder-hop.open"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "folder-hop.open",
+        "title": "Folder Hop: Open Folder in New Window"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "folder-hop.open",
+        "key": "ctrl+shift+o",
+        "mac": "cmd+shift+o"
+      }
+    ]
+  }
+}
