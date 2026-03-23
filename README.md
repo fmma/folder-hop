@@ -23,7 +23,7 @@ Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/item
 ```sh
 git clone https://github.com/fmma/folder-hop.git
 cd folder-hop
-ln -s "$(pwd)" ~/.vscode/extensions/fmma.folder-hop-0.1.0
+ln -s "$(pwd)" ~/.vscode/extensions/fmma.folder-hop
 ```
 
 Reload VS Code after installing.
