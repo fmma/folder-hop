@@ -2,7 +2,7 @@
 
 Navigate and open folders in a new VS Code window using the quick pick UI.
 
-![Demo](demo.gif)
+![Demo](https://raw.githubusercontent.com/fmma/folder-hop/main/demo.gif)
 
 ## Features
 
