@@ -2,7 +2,7 @@
   "name": "folder-hop",
   "displayName": "Folder Hop",
   "description": "Open folders in a new window using the quick pick UI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "fmma",
   "license": "MIT",
   "repository": {
