@@ -40,15 +40,23 @@ function activate(context) {
       qp.show();
 
       let pending = 0;
+      let currentDir = startDir;
 
       const updateItems = async () => {
         const id = ++pending;
         qp.busy = true;
 
         const raw = qp.value;
-        const expanded = expandHome(raw);
-        const dir = raw.endsWith("/") ? expanded : path.dirname(expanded);
-        const prefix = raw.endsWith("/") ? "" : path.basename(expanded);
+        let dir, prefix;
+
+        if (raw.startsWith("/") || raw.startsWith("~")) {
+          const expanded = expandHome(raw);
+          dir = raw.endsWith("/") ? expanded : path.dirname(expanded);
+          prefix = raw.endsWith("/") ? "" : path.basename(expanded);
+        } else {
+          dir = currentDir;
+          prefix = raw;
+        }
 
         let names = await listDirs(dir);
 
@@ -94,7 +102,9 @@ function activate(context) {
         }
 
         const desc = selected.description;
+        currentDir = expandHome(desc);
         qp.value = desc === "/" ? "/" : desc + "/";
+        updateItems();
       });
 
       qp.onDidHide(() => qp.dispose());

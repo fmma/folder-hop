@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Fix navigation failing when typing replaces the path prefix in the quick pick input.
+
 ## 0.1.2
 
 - Increase demo GIF resolution.
