@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Make folder name filtering case-sensitive to match the filesystem.
+
 ## 0.1.5
 
 - Allow navigating into hidden folders: dot folders are hidden from auto-complete by default but appear once the typed prefix starts with ".".

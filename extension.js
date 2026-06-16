@@ -67,8 +67,7 @@ function activate(context) {
         }
 
         if (prefix) {
-          const lower = prefix.toLowerCase();
-          names = names.filter((n) => n.toLowerCase().startsWith(lower));
+          names = names.filter((n) => n.startsWith(prefix));
         }
 
         const items = [];
