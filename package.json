@@ -1,7 +1,7 @@
 {
   "name": "folder-hop",
   "displayName": "Folder Hop",
-  "description": "Open folders in a new window using the quick pick UI",
+  "description": "Navigate directories and open any folder in a new window, like Ctrl+P for folders.",
   "version": "0.1.6",
   "publisher": "fmma",
   "license": "MIT",
@@ -16,6 +16,22 @@
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "open folder",
+    "switch project",
+    "project switcher",
+    "workspace",
+    "directory",
+    "navigation",
+    "quick pick",
+    "change folder",
+    "recent folders",
+    "open recent"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
   "activationEvents": [
     "onCommand:folder-hop.open"
   ],

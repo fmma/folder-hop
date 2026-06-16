@@ -1,13 +1,15 @@
 # Folder Hop
 
-Navigate and open folders in a new VS Code window using the quick pick UI.
+Like Ctrl+P, but for folders. Type a directory name to filter, press Enter to dive in, and open any folder in a new VS Code window. No saved project list, no setup. Press `Ctrl+Shift+O` (`Cmd+Shift+O` on macOS) to start.
 
 ![Demo](https://raw.githubusercontent.com/fmma/folder-hop/main/demo.gif)
 
 ## Features
 
-- Quick pick interface for browsing directories (similar to Ctrl+P for files).
-- Navigate into subdirectories with Enter.
+- Quick pick interface for browsing directories, similar to Ctrl+P for files.
+- Type a name to filter, Enter to dive in: type, Enter, type, Enter to navigate quickly without the arrow keys.
+- Case-sensitive matching that respects the filesystem.
+- Hidden dot folders stay out of the way until the typed name starts with ".".
 - Navigate to the parent directory with `..`.
 - Open any directory in a new window with "Open this folder".
 - Starts in the current workspace folder.

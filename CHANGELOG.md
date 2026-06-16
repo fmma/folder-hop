@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.7
+
+- Improve the marketplace listing: add search keywords, sharpen the description, set a gallery banner, and refresh the README.
+
 ## 0.1.6
 
 - Make folder name filtering case-sensitive to match the filesystem.
