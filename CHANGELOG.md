@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Allow navigating into hidden folders: dot folders are hidden from auto-complete by default but appear once the typed prefix starts with ".".
+
 ## 0.1.4
 
 - Hide "Open this folder" and ".." entries while a search term is typed, so the first match is preselected for quicker navigation.

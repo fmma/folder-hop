@@ -17,7 +17,7 @@ async function listDirs(dir) {
   try {
     const entries = await fs.readdir(dir, { withFileTypes: true });
     return entries
-      .filter((e) => e.isDirectory() && !e.name.startsWith("."))
+      .filter((e) => e.isDirectory())
       .map((e) => e.name);
   } catch {
     return [];
@@ -61,6 +61,10 @@ function activate(context) {
         let names = await listDirs(dir);
 
         if (id !== pending) return;
+
+        if (!prefix.startsWith(".")) {
+          names = names.filter((n) => !n.startsWith("."));
+        }
 
         if (prefix) {
           const lower = prefix.toLowerCase();
