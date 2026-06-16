@@ -67,13 +67,15 @@ function activate(context) {
           names = names.filter((n) => n.toLowerCase().startsWith(lower));
         }
 
-        const items = [
-          { label: "$(folder-opened) Open this folder", description: compactHome(dir), isOpenHere: true, alwaysShow: true },
-        ];
+        const items = [];
 
-        const parent = path.dirname(dir);
-        if (parent !== dir) {
-          items.push({ label: "..", description: compactHome(parent), alwaysShow: true });
+        if (!prefix) {
+          items.push({ label: "$(folder-opened) Open this folder", description: compactHome(dir), isOpenHere: true, alwaysShow: true });
+
+          const parent = path.dirname(dir);
+          if (parent !== dir) {
+            items.push({ label: "..", description: compactHome(parent), alwaysShow: true });
+          }
         }
 
         for (const name of names) {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+- Hide "Open this folder" and ".." entries while a search term is typed, so the first match is preselected for quicker navigation.
+
 ## 0.1.3
 
 - Fix navigation failing when typing replaces the path prefix in the quick pick input.
