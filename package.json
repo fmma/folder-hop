@@ -2,7 +2,7 @@
   "name": "folder-hop",
   "displayName": "Folder Hop",
   "description": "Navigate directories and open any folder in a new window, like Ctrl+P for folders.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "publisher": "fmma",
   "license": "MIT",
   "repository": {
